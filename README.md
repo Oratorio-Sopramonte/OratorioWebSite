@@ -1,5 +1,6 @@
 # Oratorio Web Platform
 Web site for the Oratorio, built with React and Vite.
+**Note: this branch contains the design with the summer events **
 
 ## 📁 Repository Structure
 
