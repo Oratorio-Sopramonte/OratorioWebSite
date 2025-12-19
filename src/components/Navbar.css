@@ -67,6 +67,21 @@
     color: var(--text-main);
 }
 
+.nav-links-estate {
+    background-color: var(--estate);
+    color: white !important;
+    font-weight: 800;
+    margin-left: 10px;
+    box-shadow: 0 4px 6px rgba(255, 66, 54, 0.2);
+}
+
+.nav-links-estate:hover {
+    background-color: #d63025;
+    /* Darker red-orange */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 66, 54, 0.3);
+}
+
 @media screen and (max-width: 960px) {
     .NavbarItems {
         position: relative;
@@ -110,19 +125,41 @@
         font-size: 1.8rem;
         cursor: pointer;
     }
-}
 
-.nav-links-estate {
-    background-color: var(--estate);
-    color: white !important;
-    font-weight: 800;
-    margin-left: 10px;
-    box-shadow: 0 4px 6px rgba(255, 66, 54, 0.2);
-}
+    .nav-links-estate {
+        margin: 0;
+        /* Reset desktop margin */
+        width: 100%;
+        /* Match .nav-links width */
+        display: table;
+        /* Match .nav-links display */
+        border-radius: 0;
+        /* Optional: if you want it to look exactly like a row */
+        /* If you want it to look like a button still but centered: */
+        /* width: 90%; margin: 1rem auto; display: block; border-radius: var(--radius); */
 
-.nav-links-estate:hover {
-    background-color: #d63025;
-    /* Darker red-orange */
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(255, 66, 54, 0.3);
+        /* User asked for "width equal to other elements", so 100% and table-like or block */
+        /* But keeping it colored: */
+    }
+
+    /* Let's actually refine the mobile estate link to be consistent but colored */
+    .nav-links-estate {
+        margin: 0;
+        width: 100%;
+        display: block;
+        /* or table to match padding behavior? */
+        text-align: center;
+        padding: 2rem 0;
+        /* Match standard link vertical padding roughly, or keep standard padding */
+        /* nav-links has padding: 2rem */
+        padding: 2rem;
+        box-shadow: none;
+        /* Flatten for mobile menu if desired, or keep */
+        border-radius: 0;
+    }
+
+    .nav-links-estate:hover {
+        transform: none;
+        box-shadow: none;
+    }
 }

@@ -43,7 +43,7 @@ This project is configured for Firebase Hosting.
    ```
    This creates a production-ready `dist` folder.
 
-3. **Monitor / Select Project**
+*3. **Monitor / Select Project** (only once)*
    If this is a new setup, run:
    ```bash
    firebase init hosting
