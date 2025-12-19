@@ -1,0 +1,175 @@
+/* Main Home Page Background (Blue) */
+.home-page {
+    background-color: var(--third);
+    color: white;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/home_background.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 12rem 0;
+    text-align: center;
+    /* margin-bottom: 3rem; Removed margin to connect with next section */
+    border-radius: 0 0 20px 20px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 1000;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Override btn-outline for dark background */
+.hero .btn-outline {
+    border-color: white;
+    color: white;
+}
+
+.hero .btn-outline:hover {
+    background-color: white;
+    color: var(--primary);
+}
+
+/* Features Section - White background */
+.features-section {
+    background-color: var(--background);
+    padding: 4rem 0;
+    color: var(--text-main);
+    border-radius: 20px 20px 0 0;
+    /* consistent rounded look */
+}
+
+.features-section .section-title {
+    color: var(--secondary);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.feature-card p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.card-link:hover {
+    color: var(--primary-hover);
+}
+
+/* Card Specific Styles */
+.card-booking {
+    border-top: 5px solid var(--booking);
+}
+
+.card-booking .card-link {
+    color: var(--booking);
+}
+
+.card-booking .card-link:hover {
+    filter: brightness(0.9);
+}
+
+.card-surveillance {
+    border-top: 5px solid var(--surveillance);
+}
+
+.card-surveillance .card-link {
+    color: var(--surveillance);
+}
+
+.card-surveillance .card-link:hover {
+    filter: brightness(0.9);
+}
+
+.card-membership {
+    border-top: 5px solid var(--membership);
+}
+
+.card-membership .card-link {
+    color: var(--membership);
+}
+
+.card-membership .card-link:hover {
+    filter: brightness(0.9);
+}
+
+/* About Section - Transparent background to show blue */
+.about-section {
+    background-color: transparent;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    /* Text white for contrast on blue */
+}
+
+.about-section .section-title {
+    color: white;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding: 4rem 0;
+    }
+}

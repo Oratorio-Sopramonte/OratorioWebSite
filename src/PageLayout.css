@@ -1,0 +1,39 @@
+/* Shared Page Layout Styles */
+
+/* Base Hero Section */
+.page-hero {
+    color: white;
+    padding: 6rem 0 4rem;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 4rem;
+    background-color: var(--page-color, #888);
+    /* Fallback */
+}
+
+.page-hero .section-title {
+    color: white;
+    margin-bottom: 1rem;
+    /* Responsive font size: minimum 2rem, preferred 8vw, maximum 3.5rem */
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    /* Safe wrap for very long words if they still overflow */
+    word-break: break-word;
+    /* Reduce side margins on mobile to give more space */
+    padding: 0 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.page-hero .section-title::after {
+    content: none;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.6;
+    font-weight: 500;
+}

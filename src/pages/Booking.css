@@ -1,0 +1,209 @@
+/* Page Header - Hero Style handled by PageLayout.css */
+
+/* Rooms Grid */
+.rooms-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1024px) {
+    .rooms-grid {
+        flex-direction: row;
+        max-width: 1200px;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .room-card {
+        flex: 1;
+        max-width: 500px;
+    }
+}
+
+/* Room Card */
+.room-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-media {
+    position: relative;
+    /* Carousel inside here */
+}
+
+/* Ensure carousel corners are square at bottom to merge with card? content has padding.
+   Actually image shows carousel is top part.
+*/
+.carousel-container {
+    border-radius: 0 !important;
+    /* Override default radius for card integration */
+}
+
+.card-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: white;
+    z-index: 10;
+}
+
+.card-badge.svago {
+    background-color: var(--booking);
+    /* Yellow/Orange */
+}
+
+.card-badge.eventi {
+    background-color: var(--booking);
+}
+
+
+.card-content {
+    padding: 2rem;
+    text-align: left;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h2 {
+    color: var(--booking);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* Tags */
+.card-tags {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: auto;
+    /* Push to bottom if consistent height needed */
+}
+
+.tag {
+    background-color: #f5f5f5;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+/* Booking Actions Section */
+.booking-actions-section {
+    text-align: center;
+    margin-bottom: 4rem;
+    background: #fff9e6;
+    /* Very light yellow background */
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 195, 0, 0.2);
+}
+
+.contact-box {
+    margin-bottom: 2rem;
+}
+
+.contact-label {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.email-link-large {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--booking);
+    font-weight: 700;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    /* Responsive font size */
+    transition: transform 0.2s;
+    /* Ensure long emails break */
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    max-width: 100%;
+    /* Ensure it doesn't exceed container */
+}
+
+.email-link-large:hover {
+    transform: scale(1.02);
+    /* No color change, just scale */
+}
+
+.btn-warning-large {
+    background-color: white;
+    color: var(--pdf);
+    border: 2px solid var(--pdf);
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    /* Pill shape */
+}
+
+.btn-warning-large:hover {
+    background-color: var(--pdf);
+    color: white;
+}
+
+/* General Info Section */
+.general-info-section {
+    padding: 4rem 2rem;
+    background-color: #fcfcfc;
+    border-radius: 20px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.info-subtitle {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    color: var(--text-light);
+}
+
+.planimetry-box {
+    margin-top: 2rem;
+}
+
+.planimetry-box h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.planimetry-image {
+    max-width: 100%;
+    width: 600px;
+    /* Fixed width for desktop/larger screens */
+    margin: 0 auto;
+    display: block;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}

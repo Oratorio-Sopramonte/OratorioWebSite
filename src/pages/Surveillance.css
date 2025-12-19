@@ -1,0 +1,72 @@
+/* Hero Section and intro handled by PageLayout.css */
+
+
+/* Content Section */
+.surveillance-content {
+    max-width: 900px;
+    margin: 0 auto 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.text-block {
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--text-main);
+    line-height: 1.8;
+}
+
+.action-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #f8fff8;
+    /* Light green tint */
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(163, 217, 119, 0.3);
+    /* var(--surveillance) with opacity */
+}
+
+.action-text {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-main);
+    max-width: 600px;
+}
+
+.btn-surveillance-large {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: white;
+    color: var(--surveillance);
+    border: 2px solid var(--surveillance);
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-surveillance-large:hover {
+    background-color: var(--surveillance);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(163, 217, 119, 0.4);
+}
+
+@media (min-width: 768px) {
+    .action-block {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .action-text {
+        text-align: left;
+        flex: 1;
+    }
+}
