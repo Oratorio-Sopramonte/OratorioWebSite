@@ -5,6 +5,7 @@ import Booking from './pages/Booking'
 import Surveillance from './pages/Surveillance'
 import Membership from './pages/Membership'
 import Contact from './pages/Contact'
+import Estate2026 from './pages/Estate2026'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="sorveglianza" element={<Surveillance />} />
         <Route path="tesseramento" element={<Membership />} />
         <Route path="contatti" element={<Contact />} />
+        <Route path="estate-2026" element={<Estate2026 />} />
       </Route>
     </Routes>
   )

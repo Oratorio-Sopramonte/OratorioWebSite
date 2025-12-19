@@ -13,6 +13,22 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Estate 2026 Promo */}
+            <section className="estate-promo-section">
+                <div className="container">
+                    <Link to="/estate-2026" className="estate-promo-banner">
+                        <div className="estate-promo-content">
+                            <span className="promo-tag">Novità</span>
+                            <h2>ESTATE 2026</h2>
+                            <p>Scopri le proposte per la prossima estate!</p>
+                        </div>
+                        <div className="estate-promo-icon">
+                            <ArrowRight size={32} />
+                        </div>
+                    </Link>
+                </div>
+            </section>
+
             {/* About / Chi Siamo Section */}
             <section className="about-section">
                 <div className="container">

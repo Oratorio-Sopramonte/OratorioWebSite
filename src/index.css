@@ -17,6 +17,8 @@
   --booking: #ffc300;
   --surveillance: #A3D977;
   --membership: #B25AC8;
+  --estate: #ff4236;
+  --estate-gradient: linear-gradient(135deg, #ff7e47 0%, #ff4236 100%);
 
   /* Typography */
   --font-main: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
