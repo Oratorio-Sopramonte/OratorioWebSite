@@ -92,9 +92,52 @@ const Estate2026 = () => {
 
                 </div>
 
-                <p className="stay-tuned-message">
-                    Presto ulteriori notizie per le iscrizioni ... <em>stay tuned!</em>
-                </p>
+                <div className="registration-info-section">
+                    <div className="section-header">
+                        <h2>Informazioni Iscrizioni</h2>
+                    </div>
+
+                    <div className="info-cards-container">
+                        <div className="info-card general-info">
+                            <h3>Pre-iscrizioni Online</h3>
+                            <p>Anche quest'anno le pre-iscrizioni ai campeggi e al Grest saranno <strong>online</strong> e <strong>fino ad esaurimento posti</strong>. Il link verrà pubblicato sui social e sul sito (noioratoriodelbondone.it).</p>
+                            <ul className="info-list">
+                                <li><strong>Apertura Iscrizioni Grest:</strong> 25 febbraio alle ore 20:30</li>
+                                <li><strong>Apertura Iscrizioni Campeggi:</strong> 26 febbraio alle ore 20:30</li>
+                                <li><strong>Termine Pre-iscrizione:</strong> entro il 28 febbraio</li>
+                            </ul>
+                            <p className="highlight-text">L'iscrizione sarà perfezionata con la ricezione della mail di avvenuta iscrizione (entro 10 giorni) e la partecipazione all'incontro genitori.</p>
+                        </div>
+
+                        <div className="info-card specific-info grest-info">
+                            <h3>Dettagli Grest</h3>
+                            <ul className="info-list">
+                                <li><strong>Quota:</strong> 120€ (100€ dal secondo figlio). <em>Nella quota sono compresi trasporti, gite e pranzi (esclusi i giorni delle gite).</em></li>
+                                <li><strong>Incontro Genitori e Pagamento:</strong> <strong>27 aprile alle ore 20:30</strong> in Oratorio a Sopramonte. Unico momento in cui si potrà effettuare il pagamento della quota <em>in contanti</em>.</li>
+                            </ul>
+                        </div>
+
+                        <div className="info-card specific-info campeggi-info">
+                            <h3>Dettagli Campeggi</h3>
+                            <ul className="info-list">
+                                <li><strong>Quota:</strong> 250€ (200€ dal secondo figlio).</li>
+                                <li><strong>Incontro Genitori e Pagamento:</strong> <strong>6 maggio alle ore 20:30</strong> in Oratorio a Sopramonte. Unico momento in cui si potrà effettuare il pagamento della quota <em>in contanti</em>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="additional-notes-section">
+                        <div className="note-card membership-note">
+                            <h4>Tesseramento NOI</h4>
+                            <p>Ricordiamo che per partecipare a Grest e Campeggi è <strong>obbligatorio il tesseramento NOI</strong>. Al momento della pre-iscrizione online, però, <em>non serve essere già tesserati</em>: potete tesserarvi il giorno stesso dell'incontro genitori.</p>
+                        </div>
+
+                        <div className="note-card support-note">
+                            <h4>Un aiuto per tutti</h4>
+                            <p>Vogliamo che il Grest e i Campeggi siano un'esperienza bellissima e davvero accessibile a tutti. Se qualche famiglia dovesse trovarsi in difficoltà a sostenere le quote di iscrizione, vi invitiamo a parlarne serenamente con il don. Insieme, in modo molto semplice e in totale anonimato, troveremo una soluzione per venire incontro ad ogni necessità.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
