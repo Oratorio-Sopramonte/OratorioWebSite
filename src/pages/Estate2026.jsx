@@ -113,7 +113,7 @@ const Estate2026 = () => {
                             <h3>Dettagli Grest</h3>
                             <ul className="info-list">
                                 <li><strong>Quota:</strong> 120€ (100€ dal secondo figlio). <em>Nella quota sono compresi trasporti, gite e pranzi (esclusi i giorni delle gite).</em></li>
-                                <li><strong>Incontro Genitori e Pagamento:</strong> <strong>27 aprile alle ore 20:30</strong> in Oratorio a Sopramonte. Unico momento in cui si potrà effettuare il pagamento della quota <em>in contanti</em>.</li>
+                                <li><strong>Incontro Genitori e Pagamento:</strong> <strong>27 aprile alle ore 20:30</strong> in Oratorio a Sopramonte. Unico momento in cui si potrà effettuare il pagamento della quota.</li>
                             </ul>
                         </div>
 
@@ -121,7 +121,7 @@ const Estate2026 = () => {
                             <h3>Dettagli Campeggi</h3>
                             <ul className="info-list">
                                 <li><strong>Quota:</strong> 250€ (200€ dal secondo figlio).</li>
-                                <li><strong>Incontro Genitori e Pagamento:</strong> <strong>6 maggio alle ore 20:30</strong> in Oratorio a Sopramonte. Unico momento in cui si potrà effettuare il pagamento della quota <em>in contanti</em>.</li>
+                                <li><strong>Incontro Genitori e Pagamento:</strong> <strong>6 maggio alle ore 20:30</strong> in Oratorio a Sopramonte. Unico momento in cui si potrà effettuare il pagamento della quota.</li>
                             </ul>
                         </div>
                     </div>
