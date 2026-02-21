@@ -347,6 +347,78 @@
     color: var(--text-light);
 }
 
+/* --- Registration Links Section --- */
+.registration-links-section {
+    margin-top: 4rem;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.link-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.link-card h3 {
+    margin: 0;
+    color: var(--secondary);
+    font-size: 1.25rem;
+}
+
+.link-card span {
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.grest-link {
+    border-color: #fcebc7;
+}
+
+.grest-link:hover {
+    border-color: #f39c12;
+}
+
+.grest-link span {
+    color: #f39c12;
+}
+
+.camp-link {
+    border-color: #ffd6d3;
+}
+
+.camp-link:hover {
+    border-color: var(--estate);
+}
+
+.camp-link span {
+    color: var(--estate);
+}
+
 /* --- Registration Info Section --- */
 .registration-info-section {
     margin-top: 4rem;

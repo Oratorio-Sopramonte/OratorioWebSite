@@ -92,6 +92,33 @@ const Estate2026 = () => {
 
                 </div>
 
+                {import.meta.env.VITE_SHOW_REGISTRATION_LINKS === 'true' && (
+                    <div className="registration-links-section">
+                        <div className="section-header">
+                            <h2>Link Pre-iscrizioni</h2>
+                            <p>Clicca sui box sottostanti per compilare il modulo di pre-iscrizione corrispondente.</p>
+                        </div>
+                        <div className="links-grid">
+                            <a href={import.meta.env.VITE_LINK_GREST || '#'} target="_blank" rel="noopener noreferrer" className="link-card grest-link">
+                                <h3>Grest Sopramonte</h3>
+                                <span>Vai al Modulo &rarr;</span>
+                            </a>
+                            <a href={import.meta.env.VITE_LINK_CAMP_1 || '#'} target="_blank" rel="noopener noreferrer" className="link-card camp-link">
+                                <h3>Campeggio 4ª-5ª Elementare</h3>
+                                <span>Vai al Modulo &rarr;</span>
+                            </a>
+                            <a href={import.meta.env.VITE_LINK_CAMP_2 || '#'} target="_blank" rel="noopener noreferrer" className="link-card camp-link">
+                                <h3>Campeggio 1ª-2ª Media</h3>
+                                <span>Vai al Modulo &rarr;</span>
+                            </a>
+                            <a href={import.meta.env.VITE_LINK_CAMP_3 || '#'} target="_blank" rel="noopener noreferrer" className="link-card camp-link">
+                                <h3>Camp. 3ª Media - Superiori</h3>
+                                <span>Vai al Modulo &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                )}
+
                 <div className="registration-info-section">
                     <div className="section-header">
                         <h2>Informazioni Iscrizioni</h2>
