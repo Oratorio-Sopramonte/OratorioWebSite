@@ -103,18 +103,18 @@ const Estate2026 = () => {
                                 <h3>Grest Sopramonte</h3>
                                 <span>Vai al Modulo &rarr;</span>
                             </a>
-                            <a href={import.meta.env.VITE_LINK_CAMP_1 || '#'} target="_blank" rel="noopener noreferrer" className="link-card camp-link">
+                            <div className="link-card camp-disabled" title="Le iscrizioni ai campeggi si aprono domani alle 20:30">
                                 <h3>Campeggio 4ª-5ª Elementare</h3>
                                 <span>Vai al Modulo &rarr;</span>
-                            </a>
-                            <a href={import.meta.env.VITE_LINK_CAMP_2 || '#'} target="_blank" rel="noopener noreferrer" className="link-card camp-link">
+                            </div>
+                            <div className="link-card camp-disabled" title="Le iscrizioni ai campeggi si aprono domani alle 20:30">
                                 <h3>Campeggio 1ª-2ª Media</h3>
                                 <span>Vai al Modulo &rarr;</span>
-                            </a>
-                            <a href={import.meta.env.VITE_LINK_CAMP_3 || '#'} target="_blank" rel="noopener noreferrer" className="link-card camp-link">
+                            </div>
+                            <div className="link-card camp-disabled" title="Le iscrizioni ai campeggi si aprono domani alle 20:30">
                                 <h3>Camp. 3ª Media - Superiori</h3>
                                 <span>Vai al Modulo &rarr;</span>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 )}
