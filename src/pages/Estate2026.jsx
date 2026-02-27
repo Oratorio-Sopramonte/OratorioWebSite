@@ -92,50 +92,33 @@ const Estate2026 = () => {
 
                 </div>
 
-                {import.meta.env.VITE_SHOW_REGISTRATION_LINKS === 'true' && (
-                    <div className="registration-links-section">
-                        <div className="section-header">
-                            <h2>Link Pre-iscrizioni</h2>
-                            <p>Clicca sui box sottostanti per compilare il modulo di pre-iscrizione corrispondente.</p>
-                        </div>
-                        <div className="links-grid">
-                            <a href={import.meta.env.VITE_LINK_GREST || '#'} target="_blank" rel="noopener noreferrer" className="link-card grest-link">
-                                <h3>Grest Sopramonte</h3>
-                                <span>Vai al Modulo &rarr;</span>
-                            </a>
-                            <div className="link-card camp-disabled" title="Le iscrizioni ai campeggi si aprono domani alle 20:30">
-                                <h3>Campeggio 4ª-5ª Elementare</h3>
-                                <span>Vai al Modulo &rarr;</span>
-                            </div>
-                            <div className="link-card camp-disabled" title="Le iscrizioni ai campeggi si aprono domani alle 20:30">
-                                <h3>Campeggio 1ª-2ª Media</h3>
-                                <span>Vai al Modulo &rarr;</span>
-                            </div>
-                            <div className="link-card camp-disabled" title="Le iscrizioni ai campeggi si aprono domani alle 20:30">
-                                <h3>Camp. 3ª Media - Superiori</h3>
-                                <span>Vai al Modulo &rarr;</span>
-                            </div>
-                        </div>
-                    </div>
-                )}
-
-                <div className="registration-info-section">
+                <div className="registration-steps-section">
                     <div className="section-header">
-                        <h2>Informazioni Iscrizioni</h2>
+                        <h2>I Passaggi dell'Iscrizione</h2>
+                        <p>Le pre-iscrizioni si sono concluse il 28 febbraio alle 20:30. Ecco i prossimi passi per confermare la partecipazione.</p>
                     </div>
 
-                    <div className="info-cards-container">
-                        <div className="info-card general-info">
-                            <h3>Pre-iscrizioni Online</h3>
-                            <p>Anche quest'anno le pre-iscrizioni ai campeggi e al Grest saranno <strong>online</strong> e <strong>fino ad esaurimento posti</strong>. Il link verrà pubblicato sui social e sul sito (noioratoriodelbondone.it).</p>
-                            <ul className="info-list">
-                                <li><strong>Apertura Iscrizioni Grest:</strong> 25 febbraio alle ore 20:30</li>
-                                <li><strong>Apertura Iscrizioni Campeggi:</strong> 26 febbraio alle ore 20:30</li>
-                                <li><strong>Termine Pre-iscrizione:</strong> entro il 28 febbraio</li>
-                            </ul>
-                            <p className="highlight-text">L'iscrizione sarà perfezionata con la ricezione della mail di avvenuta iscrizione (entro 10 giorni) e la partecipazione all'incontro genitori.</p>
+                    <div className="steps-container">
+                        <div className="step-card completed">
+                            <div className="step-number">1</div>
+                            <h3>Pre-iscrizione</h3>
+                            <p>Fase conclusa. Abbiamo raccolto le vostre richieste fino ad esaurimento posti.</p>
                         </div>
 
+                        <div className="step-card active">
+                            <div className="step-number">2</div>
+                            <h3>Mail di Conferma</h3>
+                            <p>Entro 10 giorni dalla pre-iscrizione, riceverete una mail con l'esito della richiesta (conferma o lista d'attesa).</p>
+                        </div>
+
+                        <div className="step-card">
+                            <div className="step-number">3</div>
+                            <h3>Pagamento</h3>
+                            <p>L'iscrizione si perfeziona con la presenza all'incontro genitori e il saldo della quota.</p>
+                        </div>
+                    </div>
+
+                    <div className="info-cards-container" style={{ marginTop: '3rem' }}>
                         <div className="info-card specific-info grest-info">
                             <h3>Dettagli Grest</h3>
                             <ul className="info-list">
@@ -156,7 +139,7 @@ const Estate2026 = () => {
                     <div className="additional-notes-section">
                         <div className="note-card membership-note">
                             <h4>Tesseramento NOI</h4>
-                            <p>Ricordiamo che per partecipare a Grest e Campeggi è <strong>obbligatorio il tesseramento NOI</strong>. Al momento della pre-iscrizione online, però, <em>non serve essere già tesserati</em>: potete tesserarvi il giorno stesso dell'incontro genitori.</p>
+                            <p>Ricordiamo che per partecipare a Grest e Campeggi è <strong>obbligatorio il tesseramento NOI</strong>. Potete tesserarvi direttamente il giorno stesso dell'incontro genitori al momento del pagamento.</p>
                         </div>
 
                         <div className="note-card support-note">
