@@ -105,15 +105,15 @@ const Estate2026 = () => {
                             <p>Fase conclusa. Abbiamo raccolto le vostre richieste fino ad esaurimento posti.</p>
                         </div>
 
-                        <div className="step-card active">
+                        <div className="step-card completed">
                             <div className="step-number">2</div>
                             <h3>Mail di Conferma</h3>
                             <p>Entro 10 giorni dalla pre-iscrizione, riceverete una mail con l'esito della richiesta (conferma o lista d'attesa).</p>
                         </div>
 
-                        <div className="step-card">
+                        <div className="step-card active">
                             <div className="step-number">3</div>
-                            <h3>Pagamento</h3>
+                            <h3>Incontro Genitori</h3>
                             <p>L'iscrizione si perfeziona con la presenza all'incontro genitori e il saldo della quota.</p>
                         </div>
                     </div>
