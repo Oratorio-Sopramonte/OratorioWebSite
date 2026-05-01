@@ -1,5 +1,5 @@
 import React from 'react'
-import { Sun, Tent, MapPin } from 'lucide-react'
+import { Sun, Tent, MapPin, FileText } from 'lucide-react'
 import './Estate2026.css'
 
 const Estate2026 = () => {
@@ -125,6 +125,15 @@ const Estate2026 = () => {
                                 <li><strong>Quota:</strong> 120€ (100€ dal secondo figlio). <em>Nella quota sono compresi trasporti, gite e pranzi (esclusi i giorni delle gite).</em></li>
                                 <li><strong>Incontro Genitori e Pagamento:</strong> <strong>27 aprile alle ore 20:30</strong> in Oratorio a Sopramonte. Unico momento in cui si potrà effettuare il pagamento della quota.</li>
                             </ul>
+                            <a
+                                href="/media/modulo_iscrizione_grest_2026.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="pdf-btn grest-pdf-btn"
+                            >
+                                <FileText size={18} />
+                                Modulo Iscrizione Grest
+                            </a>
                         </div>
 
                         <div className="info-card specific-info campeggi-info">
@@ -133,6 +142,15 @@ const Estate2026 = () => {
                                 <li><strong>Quota:</strong> 250€ (200€ dal secondo figlio).</li>
                                 <li><strong>Incontro Genitori e Pagamento:</strong> <strong>6 maggio alle ore 20:30</strong> in Oratorio a Sopramonte. Unico momento in cui si potrà effettuare il pagamento della quota.</li>
                             </ul>
+                            <a
+                                href="/media/modulo_iscrizione_campeggio_2026.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="pdf-btn campeggio-pdf-btn"
+                            >
+                                <FileText size={18} />
+                                Modulo Iscrizione Campeggio
+                            </a>
                         </div>
                     </div>
 
