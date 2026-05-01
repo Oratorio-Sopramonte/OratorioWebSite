@@ -26,10 +26,10 @@ const Membership = () => {
                                 <h3>assicurazione</h3>
                                 <p>Copertura assicurativa durante tutte le attività organizzate dall'oratorio.</p>
                             </div>
-                            <div className="benefit-card">
+                            {/* <div className="benefit-card">
                                 <h3>agevolazioni</h3>
                                 <p>Prezzi vantaggiosi per le gite, i campi estivi e tutte le proposte dell'oratorio.</p>
-                            </div>
+                            </div> */}
                             <div className="benefit-card">
                                 <h3>sostegno</h3>
                                 <p>Contribuisci concretamente alle spese di gestione e alle iniziative per i ragazzi.</p>
