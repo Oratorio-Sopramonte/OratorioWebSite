@@ -1,5 +1,5 @@
 import React from 'react'
-import { Sun, Tent, MapPin, FileText } from 'lucide-react'
+import { Sun, Tent, MapPin, FileText, BookOpen, ExternalLink } from 'lucide-react'
 import './Estate2026.css'
 
 const Estate2026 = () => {
@@ -111,12 +111,33 @@ const Estate2026 = () => {
                             <p>Entro 10 giorni dalla pre-iscrizione, riceverete una mail con l'esito della richiesta (conferma o lista d'attesa).</p>
                         </div>
 
-                        <div className="step-card active">
+                        <div className="step-card completed">
                             <div className="step-number">3</div>
                             <h3>Incontro Genitori</h3>
                             <p>L'iscrizione si perfeziona con la presenza all'incontro genitori e il saldo della quota.</p>
                         </div>
                     </div>
+
+                    {/* Banner Slide Serata Campeggi */}
+                    <a
+                        href="/media/slide_serata_campeggi.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="campeggi-slides-banner"
+                    >
+                        <div className="slides-banner-icon">
+                            <BookOpen size={32} />
+                        </div>
+                        <div className="slides-banner-text">
+                            <span className="slides-banner-title">Materiale Serata Campeggi</span>
+                            <span className="slides-banner-subtitle">Consulta le slide con tutte le informazioni sui campeggi e il materiale da portare</span>
+                        </div>
+                        <div className="slides-banner-cta">
+                            <ExternalLink size={20} />
+                            <span>Apri le slide</span>
+                        </div>
+                    </a>
+
 
                     <div className="info-cards-container" style={{ marginTop: '3rem' }}>
                         <div className="info-card specific-info grest-info">

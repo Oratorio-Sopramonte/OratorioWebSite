@@ -679,3 +679,99 @@
     background: linear-gradient(135deg, #c0392b, #96281b);
     box-shadow: 0 8px 20px rgba(255, 66, 54, 0.4);
 }
+
+/* --- Banner Slide Serata Campeggi --- */
+.campeggi-slides-banner {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, var(--estate, #ff4236) 0%, #c0392b 100%);
+    border-radius: 1.25rem;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 8px 24px -6px rgba(255, 66, 54, 0.4);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+    cursor: pointer;
+}
+
+.campeggi-slides-banner:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px -6px rgba(255, 66, 54, 0.5);
+    filter: brightness(1.07);
+}
+
+.slides-banner-icon {
+    flex-shrink: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+}
+
+.slides-banner-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 0;
+}
+
+.slides-banner-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: -0.2px;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.slides-banner-subtitle {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    line-height: 1.4;
+}
+
+.slides-banner-cta {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.75rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    white-space: nowrap;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: background 0.2s ease;
+}
+
+.campeggi-slides-banner:hover .slides-banner-cta {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 600px) {
+    .campeggi-slides-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .slides-banner-title {
+        white-space: normal;
+    }
+
+    .slides-banner-cta {
+        width: 100%;
+        justify-content: center;
+    }
+}
