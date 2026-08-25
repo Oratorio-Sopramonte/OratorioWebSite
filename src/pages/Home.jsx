@@ -13,6 +13,22 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Gita Val di Fumo Promo */}
+            <section className="gita-promo-section">
+                <div className="container">
+                    <Link to="/gita-val-di-fumo" className="gita-promo-banner">
+                        <div className="gita-promo-content">
+                            <span className="promo-tag">In evidenza</span>
+                            <h2>GITA VAL DI FUMO</h2>
+                            <p>Scopri i dettagli e iscriviti subito!</p>
+                        </div>
+                        <div className="gita-promo-icon">
+                            <ArrowRight size={32} />
+                        </div>
+                    </Link>
+                </div>
+            </section>
+
             {/* About / Chi Siamo Section */}
             <section className="about-section">
                 <div className="container">
