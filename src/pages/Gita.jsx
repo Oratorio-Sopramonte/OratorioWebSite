@@ -38,7 +38,7 @@ const Gita = () => {
                             </ul>
 
                             <div className="gita-action">
-                                <a href="https://docs.google.com/forms" target="_blank" rel="noopener noreferrer" className="btn-iscriviti">
+                                <a href="https://forms.gle/NTzR6xKAt3JQyKNU6" target="_blank" rel="noopener noreferrer" className="btn-iscriviti">
                                     ISCRIVITI ORA <ExternalLink size={20} />
                                 </a>
                             </div>
