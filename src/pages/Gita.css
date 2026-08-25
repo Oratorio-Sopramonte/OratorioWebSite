@@ -1,0 +1,201 @@
+.gita-page {
+    min-height: 100vh;
+    padding-bottom: 4rem;
+    background-color: #f8f9fa;
+}
+
+.gita-header {
+    background: linear-gradient(135deg, #7da5c9 0%, #4a7c9f 100%);
+    color: white;
+    padding: 6rem 0 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.gita-collab {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(5px);
+}
+
+.gita-header h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.gita-date {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: white;
+    color: #4a7c9f;
+    padding: 0.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.gita-content-section {
+    margin-top: -3rem;
+    position: relative;
+    z-index: 10;
+}
+
+.gita-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.info-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.info-card h2 {
+    color: #4a7c9f;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.specs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.specs-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.specs-list li:last-child {
+    margin-bottom: 0;
+}
+
+.specs-list .icon {
+    color: #4a7c9f;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.specs-list strong {
+    display: block;
+    color: var(--text-dark);
+    margin-bottom: 0.2rem;
+}
+
+.specs-list span {
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+.highlight-text {
+    color: var(--accent) !important;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.gita-action {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.btn-iscriviti {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #7da5c9 0%, #4a7c9f 100%);
+    color: #e8cba5; /* Marroncino cartone */
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1.2rem 3rem;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(74, 124, 159, 0.3);
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-iscriviti:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(74, 124, 159, 0.4);
+    color: #f5dcb8; /* Marroncino leggermente più chiaro all'hover */
+}
+
+.gita-thanks {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    padding-top: 1.5rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+.poster-wrapper {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    border: 8px solid white;
+    transform: rotate(2deg);
+    transition: transform 0.4s ease;
+}
+
+.poster-wrapper:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.poster-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .gita-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .gita-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .gita-content-section {
+        margin-top: -2rem;
+    }
+    
+    .poster-wrapper {
+        transform: none;
+        order: -1; /* Mette la locandina prima del testo su mobile */
+        margin-bottom: 1rem;
+    }
+}

@@ -34,6 +34,9 @@ const Navbar = () => {
                     <li className="nav-item">
                         <Link to="/contatti" className="nav-links" onClick={() => setIsOpen(false)}>Contatti</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link to="/gita-val-di-fumo" className="nav-links" style={{ color: 'var(--accent)', fontWeight: 'bold' }} onClick={() => setIsOpen(false)}>Gita in Montagna</Link>
+                    </li>
                 </ul>
             </div>
         </nav>
