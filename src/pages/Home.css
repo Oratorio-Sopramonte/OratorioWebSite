@@ -173,3 +173,75 @@
         padding: 4rem 0;
     }
 }
+
+/* Estate 2026 Promo Banner */
+.estate-promo-section {
+    padding: 2rem 0;
+}
+
+.estate-promo-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--estate-gradient);
+    border-radius: 16px;
+    padding: 2rem 3rem;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(255, 66, 54, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.estate-promo-banner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(255, 66, 54, 0.5);
+    color: white;
+}
+
+.estate-promo-content h2 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    font-weight: 800;
+}
+
+.estate-promo-content p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin: 0;
+}
+
+.promo-tag {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.estate-promo-icon {
+    background: white;
+    color: var(--estate);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.estate-promo-banner:hover .estate-promo-icon {
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .estate-promo-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+}

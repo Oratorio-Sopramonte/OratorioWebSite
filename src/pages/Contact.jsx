@@ -65,8 +65,7 @@ const Contact = () => {
                         <div className="map-container">
                             <iframe
                                 title="Mappa Oratorio del Bondone"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d382.4787981082099!2d11.060600049598694!3d46.07297320000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47827196e3480547%3A0x6a980af2afb2d8d7!2sP.za%20don%20Luigi%20Pedrolli%2C%204%2C%2038123%20Trento%20TN!5e1!3m2!1sit!2sit!4v1765705906542!5m2!1sit!2sit"
-                                allowFullScreen=""
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d489.29715481762986!2d11.061013164037549!3d46.073380248694505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4782710035f99fc5%3A0x23e922f6e33e41d!2sNOI%20Oratorio%20del%20Bondone!5e0!3m2!1sit!2suk!4v1778152987546!5m2!1sit!2suk"
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
                             ></iframe>

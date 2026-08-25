@@ -1,5 +1,8 @@
 /* Hero Section and intro handled by PageLayout.css */
 
+.surveillance-page {
+    padding-bottom: 6rem;
+}
 
 /* Content Section */
 .surveillance-content {
@@ -70,3 +73,109 @@
         flex: 1;
     }
 }
+
+/* --- Seasonal Banner --- */
+.seasonal-banner {
+    position: relative;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 1.2rem;
+    overflow: hidden;
+    margin: 2rem 0 0 0;
+    box-shadow: 0 8px 30px rgba(15, 52, 96, 0.35);
+}
+
+.seasonal-banner-ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(180deg, #f9ca24, #f0932b);
+    border-radius: 1.2rem 0 0 1.2rem;
+}
+
+.seasonal-banner-ribbon::after {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    width: 120px;
+    height: 200%;
+    background: rgba(249, 202, 36, 0.06);
+    transform: rotate(-15deg);
+    pointer-events: none;
+}
+
+.seasonal-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.4rem 2rem 1.4rem 2.5rem;
+}
+
+.seasonal-banner-icon {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    background: rgba(249, 202, 36, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f9ca24;
+    border: 1px solid rgba(249, 202, 36, 0.3);
+}
+
+.seasonal-banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.seasonal-banner-text strong {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #f9ca24;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.seasonal-banner-text span {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.5;
+}
+
+.seasonal-banner-text em {
+    color: #74b9ff;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* --- Dimmed Content Overlay --- */
+.dimmed-content {
+    position: relative;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.dimmed-content::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(18, 24, 48, 0.55);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border-radius: 1.2rem;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.dimmed-content > * {
+    opacity: 0.45;
+    filter: grayscale(30%);
+    pointer-events: none;
+    user-select: none;
+}
+
