@@ -14,7 +14,7 @@ const Home = () => {
             </section>
 
             {/* Gita Val di Fumo Promo */}
-            <section className="gita-promo-section">
+            {/* <section className="gita-promo-section">
                 <div className="container">
                     <Link to="/gita-val-di-fumo" className="gita-promo-banner">
                         <div className="gita-promo-content">
@@ -27,7 +27,7 @@ const Home = () => {
                         </div>
                     </Link>
                 </div>
-            </section>
+            </section> */}
 
             {/* About / Chi Siamo Section */}
             <section className="about-section">
