@@ -43,14 +43,14 @@ const Booking = () => {
                             <h2>SALA GIOCHI 🏓</h2>
                             <p className="card-description">
                                 La sala giochi è fornita di vari giochi come calcetti e tavoli da ping-pong.
-                                Ideale per momenti di convivialità. Accesso diretto al bagno e alla cucina.
+                                Accesso diretto al bagno e alla cucina.
                             </p>
 
-                            <div className="card-tags">
+                            {/* <div className="card-tags">
                                 <span className="tag">⚽ Calcetto</span>
                                 <span className="tag">🍺 Cucina</span>
                                 <span className="tag">🚻 Bagno</span>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
@@ -64,13 +64,12 @@ const Booking = () => {
                             <h2>SALA POLIVALENTE 🎤</h2>
                             <p className="card-description">
                                 Ampio spazio vuoto provvisto di impianto audio con microfono e videoproiettore.
-                                Ideale per conferenze, feste e riunioni.
                             </p>
 
-                            <div className="card-tags">
+                            {/* <div className="card-tags">
                                 <span className="tag">📽️ Proiettore</span>
                                 <span className="tag">👥 Capiente</span>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

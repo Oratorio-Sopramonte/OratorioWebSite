@@ -1,5 +1,5 @@
 import React from 'react'
-import { /* FileSpreadsheet, */ MoonStar, Sun } from 'lucide-react'
+import { FileSpreadsheet } from 'lucide-react'
 import '../PageLayout.css'
 import './Surveillance.css'
 
@@ -18,7 +18,7 @@ const Surveillance = () => {
 
             <div className="container">
 
-                {/* Banner stagionale */}
+                {/* Banner stagionale 
                 <div className="seasonal-banner">
                     <div className="seasonal-banner-ribbon"></div>
                     <div className="seasonal-banner-content">
@@ -31,46 +31,36 @@ const Surveillance = () => {
                         </div>
                     </div>
                 </div>
+                */}
 
-                {/* =====================================================
-                    AUTUNNO: decommentare il blocco qui sotto per
-                    ripristinare il contenuto della pagina sorveglianza.
-                    Rimuovere anche il commento all'import di FileSpreadsheet.
-                    ===================================================== */}
-                {/*
-                <div className="dimmed-content">
-                    <div className="surveillance-content">
+                <div className="surveillance-content">
+                    <div className="text-block">
+                        <p>
+                            Per rendere possibile questa iniziativa, abbiamo bisogno della collaborazione di tutti.
+                            Ogni sera è fondamentale la presenza di alcuni adulti per sorvegliare i ragazzi
+                            e garantire che il tutto si svolga in modo sereno.
+                        </p>
+                    </div>
 
-                        <div className="text-block">
+                    <div className="action-block">
+                        <div className="action-text">
                             <p>
-                                Per rendere possibile questa iniziativa, abbiamo bisogno della collaborazione di tutti.
-                                Ogni sera è fondamentale la presenza di alcuni adulti per sorvegliare i ragazzi
-                                e garantire che il tutto si svolga in modo sereno.
+                                Se vuoi contribuire, puoi dare la tua disponibilità inserendo il tuo nome
+                                nel file Excel qui accanto, nella data che preferisci.
                             </p>
                         </div>
 
-                        <div className="action-block">
-                            <div className="action-text">
-                                <p>
-                                    Se vuoi contribuire, puoi dare la tua disponibilità inserendo il tuo nome
-                                    nel file Excel qui accanto, nella data che preferisci.
-                                </p>
-                            </div>
-
-                            <a
-                                href="https://docs.google.com/spreadsheets/d/1-btCrQyoSMxjgQdcN5NiNOLXLlt6fTrvI90h2pI5ypY/edit?usp=sharing"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-surveillance-large"
-                            >
-                                <FileSpreadsheet size={24} />
-                                Sorveglianza
-                            </a>
-                        </div>
-
+                        <a
+                            href="https://docs.google.com/spreadsheets/d/1xKQTywQhrAxngvzIMIG4ZX63u0FfPzl1yJtu6mVlxDM/edit?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-surveillance-large"
+                        >
+                            <FileSpreadsheet size={24} />
+                            Sorveglianza
+                        </a>
                     </div>
                 </div>
-                */}
             </div>
         </div>
     )
